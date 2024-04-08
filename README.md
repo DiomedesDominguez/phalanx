@@ -61,3 +61,7 @@ For the Customers table:
 - Implement soft-delete
 - Implement JWT authentication, the issuer must be the ASP.NET Application
 - TBA
+
+## Known Bugs
+
+- There is some kind of SQL injection, for example ```curl http://localhost:37000/customers?limit=4q``` returns all. Maybe that's the limit of using PostgREST and I should rely in a strong query validation process.
