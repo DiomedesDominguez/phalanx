@@ -45,6 +45,12 @@ F*ck Entity Framework and EF Identity in general. EF is good and all, but having
 
 Even if I want to rollback and just use EF instead of PostgREST and I know that can be done, I'll need to replicate almost everything that PostgREST already implements for me just for a flavor as a developer and I'll coming back to my problem.
 
+## Screenshots
+
+![get_customers](assets/get_customers.png)
+
+![get_customers2](assets/get_customers_limit.png)
+
 ## Goals
 
 For the Customers table:
