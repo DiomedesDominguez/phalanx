@@ -3910,3 +3910,15 @@ ALTER TABLE ONLY employees
 -- PostgreSQL database dump complete
 --
 
+--
+-- PostREST API
+--
+
+-- Create a role for anonymous web access
+create role web_anon nologin;
+grant usage on schema public to web_anon; --has permission to access things in the public schema
+grant select on public.customers to web_anon; --to read rows in the customers table
+
+--create a dedicated role for connecting to the database
+create role authenticator noinherit login password 'mysecretpassword';
+grant web_anon to authenticator;

@@ -47,7 +47,10 @@ Even if I want to rollback and just use EF instead of PostgREST and I know that 
 
 ## Goals
 
-- Create a simple table
+For the Customers table:
+- Create a simple table to list them
+    - It should implement limit and pagination
+
 - Create a simple form for insert/update
 - Implement soft-delete
 - Implement JWT authentication, the issuer must be the ASP.NET Application
